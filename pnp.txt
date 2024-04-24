@@ -1,0 +1,14 @@
+#Home Position
+movej([-1.5708048979388636, -1.5708195171751917, -1.5707497596740723, -1.5707975826659144, 1.5708502531051636, 2.9670597283903604], a=1.3962634015954636, v=1.0471975511965976)
+#Open Gripper
+set_tool_digital_out(1, True)
+sleep(0.5)
+set_tool_digital_out(1, False)
+#Wait One Second
+sleep(1.0)
+#Close Gripper
+set_tool_digital_out(0, True)
+sleep(0.5)
+set_tool_digital_out(0, False)
+#Wait One Second
+sleep(1.0)
